@@ -1,0 +1,55 @@
+// sub refers to colors used in subtitles kind of stuff
+
+export const colors = {
+  navyBlue: 'rgb(6,114,230)',
+  white: 'rgb(255,255,255)',
+  gunPowder: 'rgb(88, 88, 90)',
+  venetianRed: 'rgb(219,0,17)',
+  charCoal: 'rgb(74,74,74)',
+  subBlue: 'rgb(0,123,255)',
+  subBlueOpa: 'rgba(0,123,255, 0.2)',
+  aliceBlue: 'rgb(234,242,252)',
+  inputBackground: 'rgb(248,251,255)',
+  grey: 'rgb(121,121,121)',
+  eclipse: 'rgb(64,64,64)',
+  balticSeaOp: 'rgba(52,58,64,0.1)',
+  balticSeaAlt: 'rgba(52,58,64,0.8)',
+  balticSea: 'rgb(52,58,64)',
+  balticSea5: 'rgba(52,58,64,0.5)',
+  balticSeaOp7: 'rgba(52,58,64,0.7)',
+  aliceBlueVariant: 'rgb(226,244,255)',
+  amberOpacity: 'rgba(255,193,7,1)',
+  whiteOpacity: 'rgba(255,255,255,0.6)',
+  snow: 'rgb(250,250,250)',
+  blackOpacity: 'rgba(0,0,0,.08)',
+  nobel: 'rgb(154,154,154)',
+  goldenPuppy: 'rgb(255,197,7)',
+  amber: 'rgb(255,193,7)',
+  hawkesBlue: 'rgb(220,223,227)',
+  suvaGrey: 'rgb(144,144,144)',
+  chinaIvory: 'rgb(255,243,205)',
+  dodgerBlue: 'rgb(45,124,250)',
+  spunPearl: 'rgb(165,164,180)',
+  whiteSmoke: 'rgb(244,244,244)',
+  amethyst: 'rgb(120,80,198)',
+  whisper: 'rgb(239,234,234)',
+  aliceBlueBorder: 'rgb(242,243,244)',
+  raven: 'rgb(112,117,121)',
+};
+
+export const backgroundColors = {
+  appBackgroundColor: colors.white,
+};
+
+export const colorMap = {
+  0: 'rgb(104,193,125)',
+  1: 'rgb(93,109,205)',
+  2: 'rgb(255,211,81)',
+  3: 'rgb(230,113,125)',
+  4: 'rgb(77,162,255)',
+  5: 'rgb(104,193,125)',
+  6: 'rgb(93,109,205)',
+  7: 'rgb(255,211,81)',
+  8: 'rgb(230,113,125)',
+  9: 'rgb(77,162,255)',
+};

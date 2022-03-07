@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "397220588508",
+    "project_id": "ejconsumer-f9d91",
+    "storage_bucket": "ejconsumer-f9d91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397220588508:android:5615523998fb1bca7f7d19",
+        "android_client_info": {
+          "package_name": "com.ejohri.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397220588508-780hoa1pbe3aulv6v9lce0b9jn9nd6gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCekJ_SvH1Pl5Ay-1vmqMb9CWwZRX8Yh1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397220588508-780hoa1pbe3aulv6v9lce0b9jn9nd6gl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "397220588508-vpcjqtsf0h8ddfevtp223unh74p8qjlo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ejohri.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
