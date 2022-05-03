@@ -5,6 +5,7 @@ import {pathSettings} from './pathSettings';
 import {tsParenthesizedType} from '@babel/types';
 
 const login = async credentials => {
+  //console.log(pathSettings.login);
   try {
     let response = await fetch(pathSettings.login, {
       method: 'POST',
@@ -19,11 +20,11 @@ const login = async credentials => {
       }),
     });
 
-    console.log('data recieved after login0', response);
+    //console.log('data recieved after login0', response);
     let resJson = await response.json();
-    console.log('data recieved after login', JSON.stringify(resJson));
+    console.log('data recieved after login', resJson);
 
-    if (resJson.code === 'OK') {
+    if ( resJson.code === 'OK') {
       await AsyncStorage.setItem(
         'ej_store',
         JSON.stringify({
@@ -35,13 +36,18 @@ const login = async credentials => {
       );
       return '';
     } else {
-      return resJson.message;
+      //console.log("Hello", esJson.message?.length);
+      if(resJson.message?.length == 0){
+        return 'Something Went Wrong. Please Try Again In Some Time';
+      }else{
+        return resJson.message;
+      }
     }
   } catch (error) {
     //Clipboard.setString(JSON.stringify(error));
     //Alert.alert(JSON.stringify(error));
     //return JSON.stringify(error)+'  xyz';
-    return 'Network Problem Try Again';
+    return 'Something Went Wrong. Please Try Again In Some Time';
   }
 };
 

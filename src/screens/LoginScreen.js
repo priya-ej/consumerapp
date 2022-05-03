@@ -74,7 +74,7 @@ function LoginScreen({ route, navigation }) {
     //const userData = await AsyncStorage.getItem('ej_store').then(JSON.parse);
     //dispatch(SAVE_USER_DATA(userData.user));
 
-    if (t_msg.length == 0) {
+    if (t_msg?.length == 0) {
       const userData = await AsyncStorage.getItem('ej_store').then(JSON.parse);
       dispatch(SAVE_USER_DATA(userData.user));
 
@@ -336,7 +336,7 @@ function LoginScreen({ route, navigation }) {
             <HelperText
               type="error"
               visible={loginMsg !== undefined && loginMsg.length !== 0}>
-              Invalid Password
+              {loginMsg}
             </HelperText>
           </View>
           <View style={{ marginTop: 20, alignItems: 'center' }}>

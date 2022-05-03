@@ -79,7 +79,7 @@ function ListPageByCategoryNamesScreen({ route, navigation }) {
       }
       //console.log('list Q : ',body);
       const resJson = await getProductsList(body);
-
+      console.log('lstData: ', resJson);
       setItemList(prevState => [...prevState, ...resJson.list]);
       //console.log(resJson.list);
       setTitle(resJson.h1_title);
@@ -125,12 +125,13 @@ function ListPageByCategoryNamesScreen({ route, navigation }) {
   React.useEffect(()=>{
     if(pageno >= 1){
       //console.log('xx call Sorted by: ', sortBy);
+      setItemList([]);
       getListData();
     }
   },[sortBy]);
 
   React.useEffect(() => {
-    console.log('IIIIIIInnnn');
+    //console.log('IIIIIIInnnn');
     setItemList([]);
     setTitle('');
     setSortBy(sort_by.Popularity);
@@ -185,13 +186,13 @@ function ListPageByCategoryNamesScreen({ route, navigation }) {
     <View style={{ flex: 1 }}>
       <SmartLoader isLoading={isLoading} />
       <Modal
-        animationType="slide"
+        //animationType="none"
         transparent={true}
         visible={sortModalVisible}
         onRequestClose={() => {
           setSortModalVisible(!sortModalVisible);
         }}>
-        <SafeAreaView style={{ flex: 1, backgroundColor: "transparent" }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.4)' }}>
           <Pressable  onPress={()=> setSortModalVisible(false)} style={{flex:1, justifyContent: "center", alignItems: "center"}}>
           <View style={{backgroundColor: '#FFFFFF', padding:15,}}>
               <View style={{alignItems:'center', borderBottomWidth:1, borderBottomColor:'#CDAF84'}}>

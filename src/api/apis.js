@@ -362,6 +362,7 @@ const getProductsAndFiltersByCategory = async ({
   if (sortBy.length) {
     body.sort_by = sortBy;
   }
+  //console.log(body);
   const productsListResponse = await hitApiByFetch({
     url,
     method,

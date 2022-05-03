@@ -138,7 +138,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "3.4"
+        versionName "3.5"
     }
     splits {
         abi {
@@ -187,7 +187,7 @@ android {
             // For each separate APK per architecture, set a unique version code as described here:
             // https://developer.android.com/studio/build/configure-apk-splits.html
             // Example: versionCode 1 will generate 1001 for armeabi-v7a, 1002 for x86, etc.
-            def versionCodes = ["armeabi-v7a": 10047, "x86": 10048, "arm64-v8a": 10049, "x86_64": 10050]
+            def versionCodes = ["armeabi-v7a": 10051, "x86": 10052, "arm64-v8a": 10053, "x86_64": 10054]
             def abi = output.getFilter(OutputFile.ABI)
             if (abi != null) {  // null for the universal-debug, universal-release variants
                 output.versionCodeOverride =
